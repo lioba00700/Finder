@@ -8,17 +8,22 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --max-warnings 0",
+    "app:sync": "pnpm --package=@capacitor/cli dlx capacitor sync",
+    "app:run:ios": "pnpm --package=@capacitor/cli dlx capacitor run ios",
+    "app:run:android": "pnpm --package=@capacitor/cli dlx capacitor run android",
     "check-types": "next typegen && tsc --noEmit"
   },
   "dependencies": {
-    "@capacitor/cli": "^8.2.0",
+    "@capacitor/android": "^8.2.0",
     "@capacitor/core": "^8.2.0",
+    "@capacitor/ios": "^8.2.0",
     "@repo/ui": "workspace:*",
     "next": "16.2.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
+    "@capacitor/cli": "^8.2.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^22.15.3",
