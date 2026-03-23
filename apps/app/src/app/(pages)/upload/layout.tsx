@@ -3,5 +3,5 @@ export default function UploadLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="px-12.5 flex-1">{children}</div>;
+  return <div className="px-10 flex-1">{children}</div>;
 }
