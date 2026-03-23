@@ -1,6 +1,10 @@
 {
   "extends": "@repo/typescript-config/nextjs.json",
   "compilerOptions": {
+    "baseUrl": ".", // 기준점 설정
+    "paths": {
+      "@/*": ["./src/*"] // @/로 시작하면 src 폴더 안에서 찾으라는 뜻
+    },
     "plugins": [
       {
         "name": "next"
@@ -9,8 +13,8 @@
     "strictNullChecks": true
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
     "next-env.d.ts",
     "next.config.js",
     ".next/types/**/*.ts"
