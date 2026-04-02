@@ -9,8 +9,8 @@ export default function UploadPage() {
     <div className="pt-25 max-[400px]:pt-15 flex flex-col gap-10">
       <div className="flex flex-col gap-6">
         <div className="size-15 bg-gray-200"></div>
-        <h3 className="text-base font-bold">
-          인스타그램 데이터 <span className="text-[#FA298E]">업로드</span>
+        <h3 className="text-xl font-bold">
+          인스타그램 데이터 <span className="text-brand-primary">업로드</span>
         </h3>
       </div>
       <div className="flex flex-col gap-3">
@@ -30,7 +30,7 @@ export default function UploadPage() {
         <div className="flex px-0.5 items-center justify-between text-sm">
           <span className="text-gray-700">데이터를 어떻게 다운로드하나요?</span>
           <span
-            className="text-[#FA298E] underline font-semibold"
+            className="text-brand-primary underline font-semibold"
             onClick={() => router.push("/upload/guide")}
           >
             가이드 보기

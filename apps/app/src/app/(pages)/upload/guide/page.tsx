@@ -12,9 +12,9 @@ export default function UploadGuidePage() {
     <div className="pt-25 max-[400px]:pt-15 flex flex-col gap-10">
       <div className="flex flex-col gap-6">
         <div className="size-10 rounded-full bg-gray-200"></div>
-        <h3 className="text-base font-bold">
+        <h3 className="text-xl font-bold">
           인스타그램 데이터{" "}
-          <span className="text-[#FA298E]">다운로드 가이드</span>
+          <span className="text-brand-primary">다운로드 가이드</span>
         </h3>
       </div>
       <div className="flex flex-col gap-5">
@@ -30,7 +30,7 @@ export default function UploadGuidePage() {
         ))}
       </div>
       <div className="flex flex-col gap-3">
-        <button className="flex items-center text-center justify-center rounded-lg p-5 bg-[#FA298E] text-white">
+        <button className="flex items-center text-center justify-center rounded-lg p-5 bg-brand-primary text-white">
           계정 설정으로 이동하기
         </button>
       </div>

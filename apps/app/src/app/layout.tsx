@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "@package/shared/globals.css";
+import { BottomNav } from "@/widgets/layouts/bottom-nav";
 
 export const metadata: Metadata = {
   title: "Finder",
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="ko">
       <body className="w-full min-h-screen h-full flex flex-col">
         {children}
+        <BottomNav />
       </body>
     </html>
   );

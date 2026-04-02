@@ -7,3 +7,7 @@
 html {
   min-height: 100%;
 }
+
+@theme {
+  --color-brand-primary: #fa298e;
+}
